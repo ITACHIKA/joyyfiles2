@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <script type="text/javascript" src="echarts.min.js"></script>
+    <script type="text/javascript" src="guangdong.js"></script>
+    <script type="text/javascript" src="weatherSpider.js"></script>
+
+</head>
+
+<body>
+    <span id="text1"></span>
+    <div id="map" style="width: 1280px;height: 720px;"></div>
+    <input type="file" onchange="loadFile(this.files[0])">
+    <div style="text-align: center;">
+        <button id="leftBut">Previous</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="stopBut">Stop</button>
+        <button id="startBut">Start</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="rightBut">Next</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>Speed</span>
+        <input type="text" value="100" id="speedText">
+    </div>
+</body>
