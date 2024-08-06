@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<header>
+    <title>Vue test</title>
+</header>
+<body>
+    <div id="vuediv">
+        {{msg}}
+        <button id="vuediv" @click="clicked">butt</button>
+    </div>
+</body>
+<script src="vue.global.js"></script>
+<script>
+    var vueApp=Vue.createApp({
+        data(){
+            return{
+                msg:"tests",
+                count:4
+            }
+        },
+        methods:{
+            clicked(){
+                alert("asd");
+            }
+        }
+    })
+    .mount("#vuediv");
+    console.log(vueApp.$data.count)
+</script>
